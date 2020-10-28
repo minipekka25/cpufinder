@@ -23,5 +23,5 @@ if (cluster.isMaster) {
         } else if (req.url === '/') {
             console.log(`serving from ${process.pid}`);
         }
-    }).listen(3000)
+    }).listen(process.env.PORT)
 }
